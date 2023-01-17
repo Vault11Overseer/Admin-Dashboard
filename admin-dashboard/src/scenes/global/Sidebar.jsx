@@ -1,9 +1,14 @@
+// USE STATE
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { Box, IconButton, Typography, useTheme } from "@mui/material";
+// REACT ROUTER DOM
 import { Link } from "react-router-dom";
+// REACT PRO SIDEBAR
+import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
+// MATERIAL UI
+import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
+// ICONS
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -17,15 +22,14 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
+// ITEM VARIABLE
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
     <MenuItem
       active={selected === title}
-      style={{
-        color: colors.grey[100],
-      }}
+      style={{color: colors.grey[100],}}
       onClick={() => setSelected(title)}
       icon={icon}
     >
@@ -35,7 +39,9 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   );
 };
 
+// SIDEBAR VARIABLE
 const Sidebar = () => {
+
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -44,21 +50,11 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
-        "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
-        },
-        "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
-        },
-        "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
-        },
-        "& .pro-menu-item.active": {
-          color: "black !important",
-        },
+        "& .pro-sidebar-inner": {background: `${colors.primary[400]} !important`,},
+        "& .pro-icon-wrapper": {backgroundColor: "transparent !important",},
+        "& .pro-inner-item": {padding: "5px 35px 5px 20px !important",},
+        "& .pro-inner-item:hover": {color: "#868dfb !important",},
+        "& .pro-menu-item.active": {color: "black !important",},
       }}
     >
       <ProSidebar collapsed={isCollapsed}>
