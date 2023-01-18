@@ -22,7 +22,7 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
-// ITEM VARIABLE
+// EVERY MENU ITEM - BRING IN THE THEME AND THE COLOR PALETTE
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
@@ -41,22 +41,25 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 
 // SIDEBAR VARIABLE
 const Sidebar = () => {
-
+  // BRING IN THE THEME AND COLOR TOKENS
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  // SET SIDEBAR TO OPEN
   const [isCollapsed, setIsCollapsed] = useState(false);
+  // what is this
   const [selected, setSelected] = useState("Dashboard");
 
   return (
     <Box
       sx={{
-        "& .pro-sidebar-inner": {background: `${colors.primary[400]} !important`,},
+        "& .pro-sidebar-inner": {background: `${colors.primary[400]} !important`, height: "100vh",},
         "& .pro-icon-wrapper": {backgroundColor: "transparent !important",},
         "& .pro-inner-item": {padding: "5px 35px 5px 20px !important",},
         "& .pro-inner-item:hover": {color: "#868dfb !important",},
         "& .pro-menu-item.active": {color: "black !important",},
       }}
     >
+{/* IF SIDEBAR IS COLLPASED USE THIS FORMAT */}
       <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
@@ -76,7 +79,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  ALETERED ART
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -92,8 +95,8 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                  src={`../../assets/DESIGN_aa_black_logo.JPG`}
+                  style={{ cursor: "pointer" }}
                 />
               </Box>
               <Box textAlign="center">
@@ -103,10 +106,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  ADMIN
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Status: ADMIN
                 </Typography>
               </Box>
             </Box>
