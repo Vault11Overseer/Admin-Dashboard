@@ -95,7 +95,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/DESIGN_aa_black_logo.JPG`}
+                  src={`./assets/DESIGN_aa_black_logo.JPG`}
                   style={{ cursor: "pointer" }}
                 />
               </Box>
