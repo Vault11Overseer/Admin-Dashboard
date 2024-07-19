@@ -1,12 +1,12 @@
 ## TITLE
-This is the title
+React Admin Dashboard
 
 # Current Status
 * DEV = Development
 * PRO = Production
 * ACT = Active
 
-current_status = 
+current_status = ACT
 
 # Short Description
 This is a short description.
