@@ -9,10 +9,11 @@ React Admin Dashboard
 **CURRENT_STATUS = LIV**
 
 # Short Description
-This is a short description.
+This is a React application that mimics the Dashboard of a typical portal system.
 
 # Long Description
-This is a long description.
+This is an application built in React Js, that is driven solely off libraries.
+From the graph svg images, the database, and the color theme are all libraries provided by the NPM library.
 
 # Demonstration
 ### `npm start`
@@ -28,6 +29,7 @@ This is a demonstration of the project
 OS: N/A
 Languages: JavaScript 
 Libraries: REACT JS
+Extra: NPM is a required download
 
 # Startup Install
 Launches the test runner in the interactive watch mode.\
@@ -60,7 +62,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This is the status of this project
 
 # Future development
-* This is a change that I am going to make in the future
+* This project is currently complete and I am focussing on other problems at the moment.
 
 # Can you help?
 I can use help with the intro routing.
@@ -70,14 +72,15 @@ Upon refresh notice that the page refreshes to an alternative link.
 Status of issues and whether they have been addressed or not.
 
 # Known Bugs
-* This is of known bugs.
+* There is a routing issue on the HomePage
 
 # Did you find a bug?
 * For all critical issues please E-mail me @ cherokeedreemer@gmail.com
 
 ## Donate
 Altered Art thank you for visiting. 
-Just a small-town boy trying my best to learn and make the world better every day through code and good community.
+Just a small-town boy trying my best to learn and make the world better every day through code and a good community.
+If you wish to donate please contact me at cherokeedreemer@gmail.com
 
 
 
