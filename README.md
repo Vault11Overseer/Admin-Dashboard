@@ -1,17 +1,17 @@
-## TITLE
+# TITLE
 React Admin Dashboard
 
-# Current Status
+## Current Status
 * DEV = Development
 * PRO = Production
 * LIV = Live
 
 **CURRENT_STATUS = LIV**
 
-# Short Description
+## Short Description
 This is a React application that mimics the Dashboard of a typical portal system.
 
-# Long Description
+## Long Description
 This is an application built in React Js, that is driven solely off libraries.
 From the graph svg images, the database, and the color theme are all libraries provided by the NPM library.
 
