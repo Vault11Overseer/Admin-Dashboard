@@ -1,4 +1,4 @@
-# 1) TITLE
+# TITLE
 **React Admin Dashboard**
 
   **CURRENT_STATUS = LIVE**
@@ -15,7 +15,7 @@
 
 
 
-# 2) STATUS
+# STATUS
 **This project is complete**
 
   ## REQUIREMENTS
@@ -73,7 +73,7 @@
 
   
 
-# 3) Future Development
+# Future Development
 **This is a breakdown of all future development including issues, bugs, and even new features.**
 
   ## Future development
