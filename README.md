@@ -3,16 +3,12 @@
 
   **CURRENT_STATUS = LIVE**
   
-  ## Short Description
-  This is a React application that mimics the Dashboard of a typical portal system.
-  
-  ## Long Description
+  ## Description
   This is an application built in React Js, that is driven solely off libraries.
   From the graph svg images, the database, and the color theme are all libraries provided by the NPM library.
   
   ## Demonstration
   This project is live @ [https://alteredart.dev/invoices](https://alteredart.dev/Admindash/)
-
 
 
 # STATUS
